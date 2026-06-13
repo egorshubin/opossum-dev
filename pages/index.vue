@@ -88,7 +88,7 @@ useHead({
             </div>
             <div>
               <NuxtLink
-                to="/google-sheets-orders-sync"
+                to="/google-sheets-orders-sync/"
                 class="inline-flex items-center justify-center w-40 h-9 bg-body text-white no-underline text-base font-bold rounded-md uppercase hover:bg-teal hover:text-white"
               >
                 Read more

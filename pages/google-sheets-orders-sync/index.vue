@@ -115,7 +115,7 @@ useHead({
             <p>
               See how the app handles your store and customer data in our
               <NuxtLink
-                to="/google-sheets-orders-sync/privacy"
+                to="/google-sheets-orders-sync/privacy/"
                 class="text-teal hover:underline"
               >Privacy Policy</NuxtLink>.
             </p>

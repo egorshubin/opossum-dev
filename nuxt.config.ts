@@ -7,6 +7,14 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss'],
 
+  // Every <NuxtLink> renders with a trailing slash so client-side navigation
+  // matches the canonical /<route>/ URLs and never triggers an Nginx redirect.
+  experimental: {
+    defaults: {
+      nuxtLink: { trailingSlash: 'append' }
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   // Canonical URLs use a trailing slash; Nitro writes each route as
