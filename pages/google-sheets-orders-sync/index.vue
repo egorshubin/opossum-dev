@@ -110,6 +110,15 @@ useHead({
               $4.90 per month with a 7-day free trial. Billed every 30 days in
               USD — cancel whenever you like.
             </p>
+
+            <h2>Privacy</h2>
+            <p>
+              See how the app handles your store and customer data in our
+              <NuxtLink
+                to="/google-sheets-orders-sync/privacy"
+                class="text-teal hover:underline"
+              >Privacy Policy</NuxtLink>.
+            </p>
           </div>
 
           <!-- App Store sidebar (desktop only) -->
