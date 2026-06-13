@@ -79,14 +79,14 @@
   .app-icon-wrap {
     display: inline-block;
     line-height: 0;
-    border: 1px solid #e1e3e5;
-    border-radius: 16px;
+    border: 1px solid #e1e3e5; /* hairline — kept in px on purpose */
+    border-radius: 1rem;
     overflow: hidden;
     background-color: #ffffff;
   }
   .app-icon-wrap img {
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 4rem;
+    height: 4rem;
   }
 }

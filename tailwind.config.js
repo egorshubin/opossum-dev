@@ -20,7 +20,10 @@ export default {
         muted: '#999999',
         teal: '#099CB3',
         pink: '#FF0076',
-        'pink-dark': '#D00060'
+        'pink-dark': '#D00060',
+        // Sampled from the Google Sheets Orders Sync app icon.
+        brand: '#14D877',
+        'brand-dark': '#11B865'
       },
       maxWidth: {
         // Bootstrap-equivalent container widths (used by .container-x).

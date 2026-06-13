@@ -36,15 +36,15 @@ useHead({
     <section>
       <div class="container-x">
         <div
-          class="min-h-[300px] mt-0 mb-[69px] md:mt-[15px] max-[1000px]:mb-[-90px] max-[453px]:mb-[-50px] bg-no-repeat bg-right min-[1001px]:bg-[url('/img/first-visit-header.svg')]"
+          class="min-h-72 mt-0 mb-16 md:mt-4 max-lg:-mb-24 max-sm:-mb-12 bg-no-repeat bg-right lg:bg-[url('/img/first-visit-header.svg')]"
         >
           <h1
-            class="font-bold text-[42px] leading-[50px] min-[541px]:text-[56px] min-[541px]:leading-[66px] min-[1001px]:pt-[55px]"
+            class="font-bold text-5xl leading-tight sm:text-6xl lg:pt-14"
           >
             Apps for Shopify
           </h1>
           <div
-            class="mt-[26px] min-[1001px]:mt-[46px] font-bold text-[28px] leading-[34px] min-[541px]:text-[34px] min-[541px]:leading-[40px]"
+            class="mt-7 lg:mt-12 font-bold text-3xl leading-tight sm:text-4xl"
           >
             <h3>For Successful<br />E-Commerce</h3>
           </div>
@@ -53,31 +53,31 @@ useHead({
     </section>
 
     <!-- App listing -->
-    <section class="mb-[60px]">
+    <section>
       <div class="container-x">
-        <div class="mb-[20px]">
+        <div class="mb-5">
           <h2
-            class="uppercase font-bold text-[32px] leading-[0.6] pl-[21px] py-[18px] bg-no-repeat bg-[url('/img/stripe-blue.png')]"
+            class="uppercase font-bold text-3xl leading-[0.6] pl-5 py-5 bg-no-repeat bg-[url('/img/stripe-blue.png')]"
           >
             Automation
           </h2>
         </div>
         <div class="flex flex-col xl:flex-row xl:items-start">
           <div
-            class="mb-[15px] xl:mb-0 text-left xl:text-center xl:w-1/12 xl:ml-[8.333%]"
+            class="mb-4 xl:mb-0 text-left xl:text-center xl:w-1/12 xl:ml-[8.333%]"
           >
             <span class="app-icon-wrap">
               <img
-                src="/img/google-sheets-orders-sync-70.png"
+                src="/img/google-sheets-orders-sync-64.png"
                 alt="Google Sheets Orders Sync icon"
               />
             </span>
           </div>
           <div class="xl:w-9/12">
-            <h3 class="font-bold text-[20px] leading-[23.14px] mb-[25px]">
+            <h3 class="font-bold text-xl leading-tight mb-6">
               Google Sheets Orders Sync
             </h3>
-            <div class="text-body text-[16px] font-normal mb-[20px]">
+            <div class="text-body text-base font-normal mb-5">
               <p>
                 Send every Shopify order straight into a spreadsheet without
                 lifting a finger. The moment a customer checks out — or an
@@ -89,7 +89,7 @@ useHead({
             <div>
               <NuxtLink
                 to="/google-sheets-orders-sync"
-                class="inline-block w-[165px] h-[34px] text-center bg-body text-white no-underline text-[16px] font-bold leading-[34px] rounded-[5px] uppercase hover:bg-teal hover:text-white"
+                class="inline-flex items-center justify-center w-40 h-9 bg-body text-white no-underline text-base font-bold rounded-md uppercase hover:bg-teal hover:text-white"
               >
                 Read more
               </NuxtLink>
