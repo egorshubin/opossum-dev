@@ -46,82 +46,74 @@ useHead({
     <!-- Details -->
     <section class="relative mt-6">
       <div class="container-x">
-        <div class="flex flex-col xl:flex-row xl:items-start xl:gap-6">
+        <article class="article">
           <!-- Main content -->
-          <div class="xl:w-8/12">
-            <span class="app-icon-wrap relative left-2 float-left mr-10 mb-2.5">
+          <div class="article-body">
+            <span class="app-icon-wrap">
               <img
                 src="/img/google-sheets-orders-sync-64.png"
                 alt="Google Sheets Orders Sync icon"
               />
             </span>
-            <h5 class="text-body text-base font-normal leading-tight">
+            <h5 class="article-lead">
               Keep a live copy of your store's orders inside Google Sheets. As
               soon as an order is placed or changed in Shopify, its details land
               in your spreadsheet on their own — so the figures your team relies
               on are never stale and you never touch an export file again.
             </h5>
 
-            <div class="mt-4">
-              <ul class="list-disc pl-6">
-                <li class="pb-4 text-body text-base font-normal leading-tight">
-                  Hands-off syncing — fresh orders appear in your sheet
-                  automatically, with no downloads or imports to run.
-                </li>
-                <li class="pb-4 text-body text-base font-normal leading-tight">
-                  Edits stay in step — adjust an order in Shopify and the same
-                  row in your sheet rewrites itself to match.
-                </li>
-                <li class="pb-4 text-body text-base font-normal leading-tight">
-                  Up and running in about a minute — paste your sheet's link,
-                  share it with our service account, and you're finished.
-                </li>
-                <li class="pb-4 text-body text-base font-normal leading-tight">
-                  Not a line of code required — everything is handled from one
-                  simple settings screen, no developer involved.
-                </li>
-                <li class="pb-4 text-body text-base font-normal leading-tight">
-                  Built entirely around Google Sheets, so your data is instantly
-                  shareable with staff, suppliers or your accountant.
-                </li>
-                <li class="pb-4 text-body text-base font-normal leading-tight">
-                  Perfect for daily reporting, automatic backups, and piping
-                  order data into the rest of your business tools.
-                </li>
-              </ul>
-            </div>
+            <ul>
+              <li>
+                Hands-off syncing — fresh orders appear in your sheet
+                automatically, with no downloads or imports to run.
+              </li>
+              <li>
+                Edits stay in step — adjust an order in Shopify and the same
+                row in your sheet rewrites itself to match.
+              </li>
+              <li>
+                Up and running in about a minute — paste your sheet's link,
+                share it with our service account, and you're finished.
+              </li>
+              <li>
+                Not a line of code required — everything is handled from one
+                simple settings screen, no developer involved.
+              </li>
+              <li>
+                Built entirely around Google Sheets, so your data is instantly
+                shareable with staff, suppliers or your accountant.
+              </li>
+              <li>
+                Perfect for daily reporting, automatic backups, and piping
+                order data into the rest of your business tools.
+              </li>
+            </ul>
 
-            <h2 class="font-bold text-xl leading-tight text-body">
-              How it works
-            </h2>
-            <div class="mt-4">
-              <ul class="list-disc pl-6">
-                <li class="text-body text-base font-normal leading-tight">
-                  Open the app and paste the link of the Google Sheet you want
-                  to fill.
-                </li>
-                <li class="text-body text-base font-normal leading-tight">
-                  Share that sheet with the email address the app shows you,
-                  giving it editor access.
-                </li>
-                <li class="text-body text-base font-normal leading-tight">
-                  Carry on selling — every new and updated order flows into the
-                  sheet by itself.
-                </li>
-              </ul>
-            </div>
+            <h2>How it works</h2>
+            <ul>
+              <li>
+                Open the app and paste the link of the Google Sheet you want
+                to fill.
+              </li>
+              <li>
+                Share that sheet with the email address the app shows you,
+                giving it editor access.
+              </li>
+              <li>
+                Carry on selling — every new and updated order flows into the
+                sheet by itself.
+              </li>
+            </ul>
 
-            <h2 class="font-bold text-xl leading-tight text-body mt-4">
-              Simple pricing
-            </h2>
-            <p class="text-body text-base font-normal leading-tight">
+            <h2>Simple pricing</h2>
+            <p>
               $4.90 per month with a 7-day free trial. Billed every 30 days in
               USD — cancel whenever you like.
             </p>
           </div>
 
           <!-- App Store sidebar (desktop only) -->
-          <div class="hidden xl:block xl:w-4/12">
+          <aside class="article-aside">
             <div class="bg-black w-full rounded-xl relative py-11 px-4">
               <h2 class="text-3xl font-bold leading-tight text-white mb-7">
                 Available on the Shopify App Store
@@ -137,8 +129,8 @@ useHead({
                 </a>
               </div>
             </div>
-          </div>
-        </div>
+          </aside>
+        </article>
       </div>
     </section>
   </div>

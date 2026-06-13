@@ -36,7 +36,7 @@ useHead({
     <section>
       <div class="container-x">
         <div
-          class="min-h-72 mt-0 mb-16 md:mt-4 max-lg:-mb-24 max-sm:-mb-12 bg-no-repeat bg-right lg:bg-[url('/img/first-visit-header.svg')]"
+          class="min-h-72 max-sm:min-h-0 mt-0 mb-16 md:mt-4 max-lg:-mb-24 max-sm:mb-14 bg-no-repeat bg-right lg:bg-[url('/img/first-visit-header.svg')]"
         >
           <h1
             class="font-bold text-5xl leading-tight sm:text-6xl lg:pt-14"

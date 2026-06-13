@@ -89,4 +89,94 @@
     width: 4rem;
     height: 4rem;
   }
+
+  /* -------------------------------------------------------------------------
+     Article layout — reusable shell for each app page.
+     Wrap an app write-up in <article class="article"> with an
+     <div class="article-body"> column and an optional
+     <aside class="article-aside"> sidebar. Typography inside .article-body
+     is driven by element rules below, so new articles need no per-tag classes.
+  ------------------------------------------------------------------------- */
+  .article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+  @media (min-width: 1280px) {
+    /* xl: copy column beside the sticky CTA sidebar */
+    .article {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+  }
+
+  .article-body {
+    width: 100%;
+  }
+  @media (min-width: 1280px) {
+    .article-body {
+      width: 66.6667%; /* 8/12 */
+    }
+  }
+
+  /* Floated app icon at the start of an article. */
+  .article-body .app-icon-wrap {
+    float: left;
+    position: relative;
+    left: 0.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 0.625rem;
+  }
+
+  /* Lead paragraph + body text. */
+  .article-body h5,
+  .article-body p,
+  .article-body li {
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+  }
+
+  .article-body p {
+    margin-bottom: 1rem;
+  }
+
+  /* Lead paragraph — sits at the top of an article beside the floated icon. */
+  .article-lead {
+    margin-bottom: 1.5rem;
+  }
+
+  .article-body ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .article-body li {
+    margin-bottom: 1rem;
+  }
+  .article-body li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Section headings — mb-4 on every article h2, as requested. */
+  .article-body h2 {
+    color: #333333;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .article-aside {
+    display: none;
+  }
+  @media (min-width: 1280px) {
+    .article-aside {
+      display: block;
+      width: 33.3333%; /* 4/12 */
+    }
+  }
 }

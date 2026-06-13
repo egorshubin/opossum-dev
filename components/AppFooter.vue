@@ -1,5 +1,5 @@
 <template>
-  <footer class="pb-9 max-xl:pb-14 text-muted text-base font-normal leading-tight">
+  <footer class="pb-9 max-xl:pb-20 text-muted text-base font-normal leading-tight">
     <div class="container-x">
       OPOSSUM, D00<br />
       Herceg-Novi, Montenegro
