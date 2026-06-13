@@ -2,8 +2,8 @@
 # -----------------------------------------------------------------------------
 # Builds the Dockerfile and runs nginx as a Web Service. App Platform
 # terminates TLS at its edge and forwards plain HTTP to the container's
-# http_port (8080) — which is why nginx/default.conf listens on 8080 with NO
-# SSL. (Listening on :443 ssl was what produced the 400.)
+# http_port (443) — which is why nginx/default.conf listens on 443 as PLAIN
+# HTTP (no `ssl`). Listening on `443 ssl` was what produced the 400.
 #
 # Apply via the DO console -> your app -> Settings -> App Spec -> paste -> Save,
 # or:  doctl apps update <APP_ID> --spec .do/app.yaml
@@ -23,7 +23,7 @@ services:
       deploy_on_push: true
 
     dockerfile_path: Dockerfile
-    http_port: 8080            # MUST match `listen 8080` in nginx/default.conf
+    http_port: 443             # MUST match `listen 443` in nginx/default.conf
 
     instance_count: 1
     instance_size_slug: apps-s-1vcpu-0.5gb   # smallest Basic tier
