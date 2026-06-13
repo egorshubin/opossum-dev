@@ -1,0 +1,13 @@
+node_modules
+.nuxt
+.output
+dist
+.git
+.gitignore
+.idea
+.osp
+ssl
+certbot
+README.md
+Dockerfile
+docker-compose.yml

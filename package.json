@@ -1,0 +1,21 @@
+{
+  "name": "opossum-dev",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Opossum Dev - Shopify Apps (Nuxt static site)",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "nuxt": "^3.14.1599",
+    "tailwindcss": "^3.4.15",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  }
+}

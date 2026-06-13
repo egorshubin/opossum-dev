@@ -1,0 +1,19 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: opossum-dev:latest
+    container_name: opossum-dev
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Mount real Let's Encrypt certs here to override the self-signed fallback.
+      # On the DO droplet (certbot default):
+      #   /etc/letsencrypt/live/opossum-dev.com/fullchain.pem -> ssl/fullchain.pem
+      #   /etc/letsencrypt/live/opossum-dev.com/privkey.pem   -> ssl/privkey.pem
+      - ./ssl:/etc/nginx/ssl:ro
+      # Webroot for certbot http-01 challenges (optional)
+      - ./certbot/www:/var/www/certbot:ro

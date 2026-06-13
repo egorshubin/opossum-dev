@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://opossum-dev.com/sitemap.xml

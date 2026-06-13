@@ -1,2 +1,16 @@
 .idea
 .osp
+
+# Nuxt / Node
+node_modules
+.nuxt
+.nitro
+.cache
+.output
+dist
+.DS_Store
+*.log
+
+# Local TLS material / certbot
+ssl
+certbot

@@ -1,0 +1,92 @@
+/* play-700 - latin */
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/play-v17-latin-700.woff2') format('woff2'),
+       url('/fonts/play-v17-latin-700.woff') format('woff');
+}
+/* play-regular - latin */
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/play-v17-latin-regular.woff2') format('woff2'),
+       url('/fonts/play-v17-latin-regular.woff') format('woff');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: 'Play', sans-serif;
+    color: #000;
+  }
+  /* Hide scrollbar (matches the original design). */
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+@layer components {
+  /* Centered page container matching the old Bootstrap .container-xl widths. */
+  .container-x {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  @media (min-width: 576px) {
+    .container-x {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container-x {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container-x {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container-x {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container-x {
+      max-width: 1320px;
+    }
+  }
+
+  /* App icon tile (Shopify-style rounded square). */
+  .app-icon-wrap {
+    display: inline-block;
+    line-height: 0;
+    border: 1px solid #e1e3e5;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  .app-icon-wrap img {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+}
