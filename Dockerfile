@@ -13,19 +13,15 @@ COPY . .
 RUN npm run generate
 
 # ---- Stage 2: serve with Nginx ----
+# App Platform terminates TLS at its edge and forwards plain HTTP to :8080,
+# so no SSL/openssl/self-signed entrypoint is needed here (that was the Droplet
+# path). The stock nginx image entrypoint runs `nginx -g 'daemon off;'`.
 FROM nginx:1.27-alpine AS runtime
-
-# openssl is used by the entrypoint to mint a self-signed cert as a fallback
-RUN apk add --no-cache openssl
 
 # Static output
 COPY --from=build /app/.output/public /usr/share/nginx/html
 
-# Nginx config + entrypoint
+# Plain-HTTP Nginx config (listens on 8080)
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY nginx/entrypoint.sh /usr/local/bin/site-entrypoint.sh
-RUN chmod +x /usr/local/bin/site-entrypoint.sh
 
-EXPOSE 80 443
-
-ENTRYPOINT ["/usr/local/bin/site-entrypoint.sh"]
+EXPOSE 8080
