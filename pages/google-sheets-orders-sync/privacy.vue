@@ -28,7 +28,7 @@ useHead({
           Privacy Policy
         </h1>
         <p class="mt-3 text-muted text-base">
-          Google Sheets Orders Sync &middot; Last updated 13 June 2026
+          Google Sheets Orders Sync &middot; Last updated 14 June 2026
         </p>
       </div>
     </section>
@@ -216,6 +216,12 @@ useHead({
             <p>We do not sell, rent or trade personal data.</p>
 
             <h2>6. Data retention</h2>
+            <p>
+              <strong>We do not store your orders or customer data in our own
+              database.</strong> This data goes directly to the Google Sheet
+              that you own and control; the App only passes it through to deliver
+              it there.
+            </p>
             <p>
               We retain your App configuration (such as your shop domain and
               connected sheet) for as long as the App is installed, so the
