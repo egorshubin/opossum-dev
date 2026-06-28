@@ -2,12 +2,12 @@
 const siteUrl = 'https://opossum-dev.com'
 
 useSeoMeta({
-  title: 'Privacy Policy - Product Translations',
+  title: 'Privacy Policy - Opossum: Translate Products',
   description:
-    'How the Product Translations Shopify app handles store information, product content, API tokens, and operational logs — and the choices and rights available to merchants.',
-  ogTitle: 'Privacy Policy - Product Translations',
+    'How the Opossum: Translate Products Shopify app handles store information, product content, API tokens, and operational logs — and the choices and rights available to merchants.',
+  ogTitle: 'Privacy Policy - Opossum: Translate Products',
   ogDescription:
-    'How the Product Translations Shopify app handles store information, product content, API tokens, and operational logs.',
+    'How the Opossum: Translate Products Shopify app handles store information, product content, API tokens, and operational logs.',
   ogType: 'website',
   ogUrl: `${siteUrl}/translate-products/privacy/`,
   robots: 'noindex, nofollow'
@@ -27,7 +27,7 @@ useHead({
           Privacy Policy
         </h1>
         <p class="mt-3 text-muted text-base">
-          Product Translations &middot; Last updated 28 June 2026
+          Opossum: Translate Products &middot; Last updated 28 June 2026
         </p>
       </div>
     </section>
@@ -41,7 +41,7 @@ useHead({
               This Privacy Policy explains how Opossum
               (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) handles
               information in connection with the
-              <strong>Product Translations</strong> application
+              <strong>Opossum: Translate Products</strong> application
               (the &ldquo;App&rdquo;) for Shopify. By installing or using the
               App, you agree to the practices described below.
             </h5>
@@ -58,7 +58,8 @@ useHead({
 
             <h2>What the App does</h2>
             <p>
-              Product Translations helps Shopify merchants export translatable
+              Opossum: Translate Products helps Shopify merchants export
+              translatable
               product content to CSV, re-import translated content, and import
               translations programmatically through a per-store API (including
               via automated or AI-assisted workflows). The App reads and writes
